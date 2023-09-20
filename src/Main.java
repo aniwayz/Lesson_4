@@ -1,5 +1,5 @@
 import org.w3c.dom.ls.LSOutput;
-
+import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
@@ -33,6 +33,24 @@ public class Main {
 
                     System.out.println("___task_6___");
 
+        int min = 1;
+        int max = 5;
+        int length = 10;
+        int []rezultatas = massive2(min, max, length);
+        for (int i = 0; i < rezultatas.length; i++) {
+            System.out.println(rezultatas[i]);
+        }
+
+                    System.out.println("___task_7___");
+
+
+
+
+
+
+
+
+
 
     }
 
@@ -60,8 +78,16 @@ public class Main {
         return sugenerotas;
     }
 
- // Sukurkite Funkciją kuri priima du int tipo kintamuosius, min ir max reikšmėms nustatyti ir sugeneruoja random int skaičių ir jį gražintų.
+ // Sukurkite Funkciją kuri sugeneruotų random int skaičių masyvą ir jį gražintų. Funkcija priima tris int tipo kintamuosius, min, max ir length reikšmėms nustatyti.
 
+    public static int[] massive2(int min, int max, int length) {
+        Random rand = new Random();
+        int[] masyvas = new int[length];
+        for (int i = 0; i < masyvas.length ; i++){
+        masyvas[i] = rand.nextInt((max - min + 1)) + min;
+        }
+        return masyvas;
+        }
 
 
 
