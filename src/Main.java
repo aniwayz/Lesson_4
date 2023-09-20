@@ -38,9 +38,9 @@ public class Main {
         int length = 10;
         int []rezultatas = massive2(min, max, length);
         for (int i = 0; i < rezultatas.length; i++) {
-            System.out.println(rezultatas[i]);
+            System.out.print(rezultatas[i]);
         }
-
+                    System.out.println();
                     System.out.println("___task_7___");
 
 
@@ -78,7 +78,6 @@ public class Main {
         return sugenerotas;
     }
 
- // Sukurkite Funkciją kuri sugeneruotų random int skaičių masyvą ir jį gražintų. Funkcija priima tris int tipo kintamuosius, min, max ir length reikšmėms nustatyti.
 
     public static int[] massive2(int min, int max, int length) {
         Random rand = new Random();
@@ -89,9 +88,14 @@ public class Main {
         return masyvas;
         }
 
+// Sukurkite Funkciją kuri panaudotų 6tos užduoties masyvą (priimtų kaip kintamąjį), susumuotų ir gražintų reikšmę.
+
+    public static int arraysum
+
+    }
 
 
-
+ //   }
 
 
 
