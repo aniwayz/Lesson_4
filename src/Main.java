@@ -23,12 +23,12 @@ public class Main {
 
         int[] massive = {1,3,5,7,9};
         ciklas(massive);
-
+        System.out.println();
                     System.out.println("___task_5___");
 
         int min2 = 3;
         int max2 = 9;
-        int graza = penktas(min2, max2);
+        int graza = randomas(min2, max2);
         System.out.println(graza);
 
                     System.out.println("___task_6___");
@@ -69,11 +69,11 @@ public class Main {
 
     public static void ciklas (int[] massive) {
         for (int i = 0; i < massive.length ; i++) {
-            System.out.println(massive[i]);
+            System.out.print(massive[i]);
         }
     }
 
-    public static int penktas(int min2, int max2) {
+    public static int randomas(int min2, int max2) {
         int sugenerotas = min2 + (int) Math.round(Math.random() * (max2 - min2));
         return sugenerotas;
     }
@@ -90,9 +90,9 @@ public class Main {
 
 // Sukurkite Funkciją kuri panaudotų 6tos užduoties masyvą (priimtų kaip kintamąjį), susumuotų ir gražintų reikšmę.
 
-    public static int arraysum
+//    public static int arraysum
 
-    }
+
 
 
  //   }
