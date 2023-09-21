@@ -67,6 +67,18 @@ public class Main {
 
                     System.out.println("___task_10___");
 
+//  Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių ir tarpų.
+//  Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį)
+
+
+        String Sentance = "Šiandien labai graži diena";
+
+
+
+
+
+
+
 
 
 
@@ -125,8 +137,6 @@ public class Main {
     return (double) CalculateArraySum (mass) / mass.length;
    }
 
- //   public static int RectangleDimensions (int Mylength, int Mywidth) {
-
     public static void RectangleDrawing (int Wide, int Long ) {
         for (int i = 0; i < Wide; i++) {
             for (int j = 0; j < Long; j++) {
@@ -136,15 +146,22 @@ public class Main {
         }
     }
 
+//    public static void SentenceWordCount
+
+    //        int vidutiniaiZodziai = 0;
+    //        for (String zodis : plants) {
+    //            if (zodis.length() > 5 ) {
+    //                if (zodis.length() <10 )
+    //                vidutiniaiZodziai++;
+    //            }
+    //        }
+    //        System.out.println(vidutiniaiZodziai);
 
 
 
+//  Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių ir tarpų.
+//  Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį)
 
-
-
-
-
-// Sukurkite Funkciją kuri priimtų du int skaičius ir atspausdintų stačiakampį užpildytą žvaigždutėmis. Pirmas int - išoriniam ciklui, antras vidiniam.
 
 // isnumeric - supranta ir skaicius ar numeris
 
