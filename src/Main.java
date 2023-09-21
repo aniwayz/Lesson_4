@@ -17,13 +17,14 @@ public class Main {
 
                     System.out.println("___task_3___");
 
-        System.out.println(sqr(4,3));
+        System.out.println(multiplication(4,3));
 
                     System.out.println("___task_4___");
 
         int[] massive = {1,3,5,7,9};
-        ciklas(massive);
+        cycle(massive);
         System.out.println();
+
                     System.out.println("___task_5___");
 
         int min2 = 3;
@@ -35,17 +36,27 @@ public class Main {
 
         int min = 1;
         int max = 5;
-        int length = 10;
-        int []rezultatas = massive2(min, max, length);
+        int length = 5;
+        int []rezultatas = Array2(min, max, length);
         for (int i = 0; i < rezultatas.length; i++) {
             System.out.print(rezultatas[i]);
         }
                     System.out.println();
                     System.out.println("___task_7___");
 
+        int [] RandArray = rezultatas;
+        int ArraySumm = CalculateArraySum(RandArray);
+        System.out.println(ArraySumm);
 
+                    System.out.println("___task_8___");
 
-
+        int [] AverageValue1 = rezultatas;
+        double AverageValueSumm = AverageValue(AverageValue1);
+        for (int skaicius : AverageValue1) {
+            System.out.print(skaicius + " ");
+        }
+        System.out.println();
+        System.out.println("Masyvo vidurkis: " + AverageValueSumm);
 
 
 
@@ -63,39 +74,51 @@ public class Main {
         return 9.8596;
     }
 
-    public static int sqr(int a, int b) {
+    public static int multiplication(int a, int b) {
         return a * b;
     }
 
-    public static void ciklas (int[] massive) {
-        for (int i = 0; i < massive.length ; i++) {
-            System.out.print(massive[i]);
+    public static void cycle (int[] insideMassive) {
+        for (int i = 0; i < insideMassive.length ; i++) {
+            System.out.print(insideMassive[i]);
         }
     }
 
-    public static int randomas(int min2, int max2) {
+    public static int randomas (int min2, int max2) {
         int sugenerotas = min2 + (int) Math.round(Math.random() * (max2 - min2));
         return sugenerotas;
     }
 
 
-    public static int[] massive2(int min, int max, int length) {
+    public static int[] Array2 (int min, int max, int length) {
         Random rand = new Random();
         int[] masyvas = new int[length];
         for (int i = 0; i < masyvas.length ; i++){
-        masyvas[i] = rand.nextInt((max - min + 1)) + min;
+        masyvas[i] = min + (int) Math.round(Math.random() * (max - min));
         }
         return masyvas;
         }
 
-// Sukurkite Funkciją kuri panaudotų 6tos užduoties masyvą (priimtų kaip kintamąjį), susumuotų ir gražintų reikšmę.
+    public static int CalculateArraySum (int[] mass) {
 
-//    public static int arraysum
+        int summ = 0;
+        for (int numberz : mass) {
+            summ += numberz;
+        }
+        return summ ;
+    }
 
 
 
+   public static double AverageValue (int[] mass){
+    int summ = 0;
+    for (int numbz : mass) {
+        summ += numbz;
+    }
+    return summ / mass.length;
+   }
 
- //   }
+
 
 
 
