@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+
 import java.util.Random;
 public class Main {
 
@@ -42,6 +42,7 @@ public class Main {
             System.out.print(rezultatas[i]);
         }
                     System.out.println();
+
                     System.out.println("___task_7___");
 
         int [] RandArray = rezultatas;
@@ -59,6 +60,18 @@ public class Main {
         System.out.println("Masyvo vidurkis: " + AverageValueSumm);
 
                     System.out.println("___task_9___");
+
+        int RectangleDimWide = randomas(min2, max2);
+        int RectangleDimLong = randomas(min2, max2);
+        RectangleDrawing(RectangleDimWide,RectangleDimLong);
+
+                    System.out.println("___task_10___");
+
+
+
+
+
+
 
 
 
@@ -108,9 +121,22 @@ public class Main {
         return summ ;
     }
 
-   public static double AverageArrayValue (int[] mass){
+   public static double AverageArrayValue (int[] mass) {
     return (double) CalculateArraySum (mass) / mass.length;
    }
+
+ //   public static int RectangleDimensions (int Mylength, int Mywidth) {
+
+    public static void RectangleDrawing (int Wide, int Long ) {
+        for (int i = 0; i < Wide; i++) {
+            for (int j = 0; j < Long; j++) {
+                System.out.print("*");
+            }
+             System.out.println();
+        }
+    }
+
+
 
 
 
@@ -120,7 +146,7 @@ public class Main {
 
 // Sukurkite Funkciją kuri priimtų du int skaičius ir atspausdintų stačiakampį užpildytą žvaigždutėmis. Pirmas int - išoriniam ciklui, antras vidiniam.
 
-
+// isnumeric - supranta ir skaicius ar numeris
 
 
 
