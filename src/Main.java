@@ -22,7 +22,7 @@ public class Main {
                     System.out.println("___task_4___");
 
         int[] massive = {1,3,5,7,9};
-        cycle(massive);
+        ArrayPrint(massive);
         System.out.println();
 
                     System.out.println("___task_5___");
@@ -51,14 +51,14 @@ public class Main {
                     System.out.println("___task_8___");
 
         int [] AverageValue1 = rezultatas;
-        double AverageValueSumm = AverageValue(AverageValue1);
+        double AverageValueSumm = AverageArrayValue(AverageValue1);
         for (int skaicius : AverageValue1) {
             System.out.print(skaicius + " ");
         }
         System.out.println();
         System.out.println("Masyvo vidurkis: " + AverageValueSumm);
 
-
+                    System.out.println("___task_9___");
 
 
 
@@ -78,7 +78,7 @@ public class Main {
         return a * b;
     }
 
-    public static void cycle (int[] insideMassive) {
+    public static void ArrayPrint (int[] insideMassive) {
         for (int i = 0; i < insideMassive.length ; i++) {
             System.out.print(insideMassive[i]);
         }
@@ -92,9 +92,9 @@ public class Main {
 
     public static int[] Array2 (int min, int max, int length) {
         Random rand = new Random();
-        int[] masyvas = new int[length];
+        int[] masyvas = new int[length]; // one of standart massive creation
         for (int i = 0; i < masyvas.length ; i++){
-        masyvas[i] = min + (int) Math.round(Math.random() * (max - min));
+        masyvas[i] = randomas(min, max);
         }
         return masyvas;
         }
@@ -108,15 +108,28 @@ public class Main {
         return summ ;
     }
 
-
-
-   public static double AverageValue (int[] mass){
-    int summ = 0;
-    for (int numbz : mass) {
-        summ += numbz;
-    }
-    return summ / mass.length;
+   public static double AverageArrayValue (int[] mass){
+    return (double) CalculateArraySum (mass) / mass.length;
    }
+
+
+
+
+
+
+
+// Sukurkite Funkciją kuri priimtų du int skaičius ir atspausdintų stačiakampį užpildytą žvaigždutėmis. Pirmas int - išoriniam ciklui, antras vidiniam.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
