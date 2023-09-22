@@ -67,13 +67,24 @@ public class Main {
 
                     System.out.println("___task_10___");
 
-//  Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių ir tarpų.
-//  Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį)
+       String Sentence = "Šiandien labai graži diena";
+       CountSentenceLetters(Sentence);
 
+                    System.out.println("___task_11___");
+//  Sukurkite Funkciją kuri priimtų sakinį, jį užkoduotų ir grąžintų.
+//  Kodavimas - sakinį apsukame iš kitos pusės. Pvz “Naglis” turi gautis “silgaN”.
 
-        String Sentance = "Šiandien labai graži diena";
+//        String Sentence2 = "Namaste";
 
+//        StringBuffer Sentence2 = new StringBuffer("Namaste");
+//        Sentence2.reverse();
+//        System.out.println(Sentence2);
 
+        String MainSentence = "Namaste";
+        String ReversedSentence = SentenceReverse(MainSentence);
+        System.out.println(ReversedSentence);
+
+                System.out.println("___task_12___");
 
 
 
@@ -146,21 +157,43 @@ public class Main {
         }
     }
 
-//    public static void SentenceWordCount
+    public static void CountSentenceLetters (String Sentence) {
+        int Letters = 0;
+        int Spaces = 0;
+        for (int i = 0; i < Sentence.length(); i++) {
+            char simbol = Sentence.charAt(i);
+            if (Character.isLetter(simbol)) {
+                Letters++;
+            } else if (simbol == ' ') {
+                    Spaces++;
+                }
+        }
+        System.out.println("Letters quantity: " + Letters);
+        System.out.println("Spaces quantity: " + Spaces);
+    }
 
-    //        int vidutiniaiZodziai = 0;
-    //        for (String zodis : plants) {
-    //            if (zodis.length() > 5 ) {
-    //                if (zodis.length() <10 )
-    //                vidutiniaiZodziai++;
-    //            }
-    //        }
-    //        System.out.println(vidutiniaiZodziai);
+    public static String SentenceReverse (String sentence2) {
+        StringBuilder builder = new StringBuilder(sentence2);
+        builder.reverse();
+        return builder.toString();
+    }
 
 
 
-//  Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių ir tarpų.
-//  Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį)
+
+
+
+
+
+//    public static void SentenceMirror (String Sentence2) {
+//        for (int i = 0; i >= Sentence2.length(); i++) {
+//
+//        }
+//    }
+
+
+
+
 
 
 // isnumeric - supranta ir skaicius ar numeris
