@@ -71,20 +71,22 @@ public class Main {
        CountSentenceLetters(Sentence);
 
                     System.out.println("___task_11___");
-//  Sukurkite Funkciją kuri priimtų sakinį, jį užkoduotų ir grąžintų.
-//  Kodavimas - sakinį apsukame iš kitos pusės. Pvz “Naglis” turi gautis “silgaN”.
+/*  Sukurkite Funkciją kuri priimtų sakinį, jį užkoduotų ir grąžintų.
+ Kodavimas - sakinį apsukame iš kitos pusės. Pvz “Naglis” turi gautis “silgaN”.
 
-//        String Sentence2 = "Namaste";
+        String Sentence2 = "Namaste";
 
-//        StringBuffer Sentence2 = new StringBuffer("Namaste");
-//        Sentence2.reverse();
-//        System.out.println(Sentence2);
-
+        StringBuffer Sentence2 = new StringBuffer("Namaste");
+        Sentence2.reverse();
+        System.out.println(Sentence2);
+*/
         String MainSentence = "Namaste";
         String ReversedSentence = SentenceReverse(MainSentence);
         System.out.println(ReversedSentence);
 
-                System.out.println("___task_12___");
+                System.out.println("___task_12_(1)_");
+
+
 
 
 
