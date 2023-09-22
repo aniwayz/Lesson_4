@@ -88,7 +88,8 @@ public class Main {
 
 
 
-
+//      function with .this is dynimic
+//      functions without is void
 
 
 
